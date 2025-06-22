@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio de Margot PHILIPPE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="photo de profil">
+            <h1>Margot PHILIPPE</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-content">
+        <header>
+            <h1>Mes projets</h1>
+            <p>Voici quelques projets réalisés durant ma formation.</p>
+        </header>
+
+        <!-- Boutons de navigation des projets -->
+        <div class="btn-container">
+            <button class="btn" data-color="#FF5733" onclick="showProject(1)">Mise en œuvre d'une enquête</button>
+            <button class="btn" data-color="#4CAF50" onclick="showProject(2)">Analyse de données, reporting et data visualisation</button>
+            <button class="btn" data-color="#2196F3" onclick="showProject(3)">Analyses et prévisions de données temporelles</button>
+            <button class="btn" data-color="#FFC107" onclick="showProject(4)">Analyse et reporting d'une analyse multivariée</button>
+        </div>
+
+
+        <div class="projects">
+            <div id="project1" class="project">
+                <h2>Mise en œuvre d'une enquête</h2>
+                <h4>Objectif du projet : Mise en place d'une enquête par questionnaire pour le Salon de la Data et de l'IA de Nantes</h4>
+                <p class="dates">Sept. 2023 - Déc. 2023</p>
+                <h5>Description</h5>
+                <p>Nous avons mené un projet d’enquête statistique dont l’objectif principal était de nous former à 
+                    la conception d’un questionnaire fiable et pertinent. En groupe de 5, nous avons conçu une 
+                    enquête à destination des participants du Salon de la Data et de l’IA de Nantes, 
+                    en utilisant le logiciel Shynx. Ce projet visait à nous faire prendre conscience des enjeux liés à la 
+                    qualité des données : éviter les biais dans la formulation des questions, assurer la clarté du questionnaire etc.</p>
+                
+                <h5>Compétences</h5>
+                <p>Ce projet nous a permis de mobiliser plusieurs compétences clés liées à la conduite d’enquêtes.</p>
+                <ol>
+                    <li>Prise de conscience des biais possibles dans la formulation des questions, en apprenant à les repérer et à les limiter</li>
+                    <li>Importance de contextualiser les données pour interpréter les résultats de l'enquête</li>
+                    <li>Être explicite sur le dérouler de notre démarche lors de la réstitution du projet</li>
+                    <li>Utilisation de téchnique de datavisualisation pour rendre les résultats plus accessibles</li>
+                    <li>Présenter une analyse claire et structurée en français et en anglais, de façon professionnelle.</li>
+                  </ol>
+                
+                <h5>Rendus</h5>
+                <p>Malheureusement aucun extrait de rendu n'est disponible.</p>
+                
+            </div>
+
+            <div id="project2" class="project">
+                <h2>Analyse de données, reporting et data visualisation</h2>
+                <h4>Objectif du projet : Création d'une application pour l'ESPM Jean Martin Charcot</h4>
+
+                <p class="dates">Janv. 2024 - Juin 2024</p>
+
+                <h5>Description</h5>
+                <p>Dans le cadre d’un projet mené en équipe de 7 étudiants sur une durée de 6 mois, nous avons conçu une application interactive 
+                    à l’aide de R Studio et R Shiny, destinée à l’EPSM Jean Martin Charcot. L’objectif principal était de permettre un suivi 
+                    régulier de l’activité de l’établissement ainsi que des patients, à partir de données mensuelles. L’application propose des 
+                    tableaux de bord dynamiques et adaptés aux variables sélectionnées, avec des visualisations claires et filtrables. 
+                    L’ergonomie a été pensée pour être accessible à tous les utilisateurs, en particulier les professionnels de santé. 
+                    Grâce à cette solution, l’établissement peut mieux répartir ses équipes entre les différents sites et les soignants 
+                    disposent d’un outil simple et efficace pour le suivi de leurs patients.
+
+                    <h5>Compétences</h5>
+                    <p>Ce projet m’a permis de mobiliser plusieurs compétences clés liées à l’analyse et à la restitution de données.</p>
+                    <ol>
+                        <li>Capacité à comprendre précisément les besoins du client et à adapter les solutions en conséquence</li>
+                        <li>Maîtrise renforcée des langages et des règles de syntaxe pour structurer et exploiter efficacement les données</li>
+                        <li>Prise en compte des spécificités des sources de données pour garantir la qualité de l’analyse</li>
+                        <li>Sensibilisation à l’importance de travailler sur des données propres et préparées pour assurer la fiabilité des résultats</li>
+                        <li>Conscience des biais possibles lors de la collecte et importance de contextualiser les données</li>
+                        <li>Utilisation de data visualisation et calculs d'indicateurs pertinents pour une restitution claire et efficace</li>
+                        <li>Capacité à communiquer les résultats de manière adaptée en français et en anglais</li>
+                    </ol>
+                <h5>Rendu</h5>
+                <p>En raison de la sensibilité des données, l'application n’est pas accessible au public.</p>
+                
+            </div>
+
+            <div id="project3" class="project">
+                <h2>Analyses et prévisions de données temporelles</h2>
+                <h4>Objectif du projet : Utiliser des outils statistiques pour explorer et modéliser des données temporelles dans le but de réaliser des prévisions fiables. </h4>
+                
+                <p class="dates"> Déc. 2024</p>
+
+                <h5>Description</h5>
+                <p>Dans le cadre d’un projet mené à trois, nous avons étudié l’évolution de l’indice des prix à la consommation harmonisé (IPCH) dans le secteur de l’habillement et des chaussures, 
+                    en France, à partir de données mensuelles de l’INSEE couvrant la période de janvier 1996 à octobre 2024. L’objectif principal était d’analyser l’impact de la pandémie de Covid-19 
+                    sur cet indice. Pour cela, nous avons restreint notre analyse à la période 2015–2024, mis en place une modélisation temporelle en ajustant la tendance et la saisonnalité (modèles 
+                    paramétriques et non paramétriques), puis effectué des prévisions avec et sans prise en compte du contexte post-Covid. En comparant les résultats et les erreurs quadratiques moyennes 
+                    des deux modèles, nous avons conclu que la pandémie n’avait pas significativement modifié l’évolution des prix dans ce secteur. </p>
+                
+                <h5>Compétences</h5>
+                    <p>Ce projet m’a permis de développer des compétences en analyse et en restitution de résultats à travers la rédaction d’un rapport structuré.</p>
+                    <ol>
+                        <li>Création de visualisations de données claires et pertinentes pour appuyer l’analyse</li>
+                        <li>Choix judicieux des graphiques pour faciliter la compréhension des résultats</li>
+                        <li>Rédaction d’un rapport structuré, synthétique et argumenté pour présenter les conclusions</li>
+                        <li>Intégration de la data visualisation dans le rapport pour illustrer les tendances et renforcer l’impact des analyses</li>
+                        <li>Utilisation d’un langage clair, précis et professionnel adapté au public cible</li>
+                    </ol>
+    
+                <section class="rendu-container">
+                    <h5>Rendu</h5>
+                    <div class="rendu-box">
+                      <iframe src="documents/SAE303_Indicedeprix_RomaneLequeux_MargotPhilippe_SolineThomas.pdf"></iframe>
+                    </div>
+                  </section>
+                  
+            </div>
+
+            <div id="project4" class="project">
+                <h2>Analyse et reporting d'une analyse multivariée</h2>
+                <h4>Objectif du projet : Automatiser un reporting d’analyse exploratoire pour faciliter la prise de décision.</h4>
+                <p class="dates">Fév. 2025 - Mars 2025</p>
+                <h5>Description</h5>
+                <p>Dans un premier temps, nous avons eu divers cours afin d'acquérir des compétences sur l'utilisation de R Shiny ainsi que sur la notion "Analyse en Composante Pricinicpale".
+                    Le projet s'est ensuite découpé en deux grandes parties. J'ai d'abord pu créer une application sur R Shiny qui portait sur les données de la criminalité aux Etats Unis de 2019.
+                    Cette application était constituée de divers onglets : "informations sur les données", "analyse descriptive", "calculs", "corrélation" et "analyse en composante principale".
+                    Ensuite, la deuxième partie de ce projet s'est faite par groupe de 4 étudiants. Nous avons réalisé une application qui permettait d'identifier des joueuses semblables sur EA Sports FC 24.
+                </p>
+                <h5>Compétences</h5>
+                <p>Ce projet m’a permis de développer des compétences techniques, statistiques et méthodologiques solides.</p>
+<ol>
+    <li>Organisation et structuration de jeux de données complexes en identifiant les variables pertinentes à l’analyse</li>
+    <li>Développement d'applications avec R Shiny, incluant tests, corrections et documentation du code</li>
+    <li>Intégration de packages spécialisés pour le traitement statistique et la visualisation de données</li>
+    <li>Application de méthodes statistiques comme l’analyse descriptive et l’Analyse en Composantes Principales (ACP)</li>
+    <li>Capacité à distinguer l’analyse exploratoire de la modélisation pour une synthèse efficace de l'information</li>
+    <li>Compréhension des limites d’interprétation et des conditions d’application des méthodes statistiques utilisées</li>
+    <li>Travail en équipe : mobilisation de ressources métier, argumentation des choix d’analyse et sélection d’indicateurs adaptés</li>
+    <li>Production de livrables clairs, rigoureux et répondant à une problématique définie</li>
+</ol>
+                <h5>Rendu</h5>
+                <a href="Application fifa 24.zip" download>Téléchargez le dossier, ouvrez sur R le fichier ui.R et lancez l'application en cliquant sur "Run app". </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let currentlyVisibleProject = null;
+    
+        function showProject(projectNumber) {
+            const selectedProject = document.getElementById('project' + projectNumber);
+    
+            if (!selectedProject) return;
+    
+            // Si on reclique sur le même projet, on le ferme
+            if (currentlyVisibleProject === selectedProject) {
+                selectedProject.classList.remove('show');
+                currentlyVisibleProject = null;
+            } else {
+                // On cache le projet actuellement ouvert
+                if (currentlyVisibleProject) {
+                    currentlyVisibleProject.classList.remove('show');
+                }
+    
+                // On affiche le projet sélectionné
+                selectedProject.classList.add('show');
+                currentlyVisibleProject = selectedProject;
+            }
+        }
+    
+        // Ajoute les couleurs aux boutons
+        document.querySelectorAll('.btn').forEach(button => {
+            const color = button.getAttribute('data-color');
+            button.style.backgroundColor = color;
+        });
+    </script>
+    
+</body>
+</html>

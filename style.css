@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&family=Ubuntu:wght@400;700&display=swap');
+
+body{
+    padding : 0 2%; 
+    margin: 0; 
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/**********************************************************************************************************/
+
+/*Partie barre de naviguation*/
+
+nav{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .profile{
+    display : flex;
+    align-items: center;
+}
+
+nav .profile img{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+nav .profile h1 {
+    margin-left: 10px;
+    font-size : 15px;
+}
+
+nav ul{
+    display : flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li:hover {
+    border-bottom-color: #000;
+ }
+
+ /**********************************************************************************************************/
+
+ /*Partie contenu titre + intro*/
+ .page-content {
+    margin : 4%;
+ }
+
+ .page-content header{
+    margin-top : 5%;
+ }
+
+ .page-content header h1{
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size : 3vw;
+ }
+
+ .page-content header p{
+    line-height: 30px;
+    text-align: justify;
+ }
+
+ /**********************************************************************************************************/
+
+ /*Partie projets réalisés*/
+ .descriptif-projets {
+    margin-top: 6%;
+    margin : 4%;
+ }
+
+.descriptif-projets h1{
+    margin-top: 6%;
+    font-family: "Ubuntu", sans-serif;
+    font-size : 2vw;
+ }
+
+ .descriptif-projets .projects {
+    display: flex;
+    flex-wrap: nowrap; /* pour tout garder sur une ligne */
+    overflow-x: auto; /* pour permettre le scroll horizontal si nécessaire */
+    gap: 40px; /* espace entre les projets */
+    text-align: center;
+    padding: 10px 0;
+}
+.descriptif-projets .projects .project .dates {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
+.descriptif-projets .projects .project{
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+.descriptif-projets .projects .project h4{
+    margin : 0;
+}
+
+.descriptif-projets .projects .project h5{
+    margin : 0;
+}
+.descriptif-projets .projects .project .description{
+    font-size : 13px;
+}
+
+.projects .project p {
+    text-align: justify;
+  }
+  
+
+
+.descriptif-projets .projects .project .dates{
+    font-size : 13px;
+    color : rgb(145,145,145);
+}
+
+
+
+.page-content .btn-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.page-content .btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Assurer qu'aucune couleur grise n'est appliquée par défaut */
+}
+
+.page-content .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Par défaut, sur la page d'accueil (section descriptif-projets), les projets sont visibles */
+.descriptif-projets .project {
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
+    padding: 0 1rem;
+}
+
+/* Sur la page projets.html, les projets sont cachés sauf quand on clique */
+.page-content .project {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    padding: 0 1rem;
+}
+
+.page-content .project.show {
+    opacity: 1;
+    max-height: 1500px;
+    margin: 1rem 0;
+}
+
+.project.show {
+    opacity: 1;
+    max-height: 1500px; /* ajuste selon la taille de ton contenu */
+    margin: 1rem 0;
+}
+
+/**********************************************************************************************************/
+
+ /*Partie logiciels*/
+
+.section_dark {
+    background: #000;
+    color: #fff;
+    padding: 50px 0; 
+}
+
+.boxed {
+    max-width: 1350px; 
+    margin-inline: auto;
+    text-align: center;
+    padding: 20px; 
+}
+
+
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.competences .competence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Taille uniforme des blocs */
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.competences .competence h3 {
+    color: black;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+    white-space: nowrap; /* Évite les retours à la ligne */
+}
+
+.competences .competence img {
+    width: 60px; /* Taille fixe pour uniformiser les logos */
+    height: 60px;
+    object-fit: contain; /* Pour éviter la déformation des logos */
+}
+
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+
+ /*Nouvelle page contact*/
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #0073b1; /* Bleu LinkedIn */
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+
+.cv-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.cv-box {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.cv-box iframe {
+    width: 100%;
+    height: 800px; /* Ajuste la hauteur si besoin */
+    border: none;
+}
+
+.cv-box img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/********************************************************************************************/
+/*******************************************************************************************/
+.pdf-link {
+    display: block; /* Pour qu'il prenne toute la largeur disponible */
+    width: 60%; /* Tu peux aller jusqu'à 100% si tu veux */
+    margin: 30px auto; /* Centrage horizontal + espace au-dessus */
+    padding: 30px;
+    font-size: 28px;
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.pdf-link:hover {
+    background-color: #cc5200;
+}
+
+.rendu-box iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+}
+
+
+/*****************************************************************************************************************************/
+/*****************************************************************************************************************************/
+
+/*Stage*/
+
+
+.stage {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.stage h1 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+}
+
+.stage p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .stage {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .stage h1 {
+        font-size: 2em;
+    }
+}
